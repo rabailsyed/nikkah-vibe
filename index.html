@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Syed Zahir Shah & Manahil Bint e Ansar — Nikah Invitation</title>
+  <meta name="description"
+    content="You are cordially invited to the sacred Nikah of Syed Zahir Shah & Manahil Bint e Ansar on 9th July 2026 at Rehman Marriage Hall, Kohat, Pakistan." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- PARTICLES CANVAS -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- MINIMALIST MODERN OPENING -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <section id="envelope-screen" class="envelope-screen minimalist-opening">
+    <div class="floating-petals" id="floatingPetals"></div>
+
+    <div class="minimalist-content">
+      <!-- Top decorative line -->
+      <div class="top-line"></div>
+
+      <!-- Main text -->
+      <div class="minimalist-text">
+        <p class="min-intro">Together with their families</p>
+        
+        <h1 class="min-groom">Syed Zahir Shah</h1>
+        <p class="min-and">&</p>
+        <h1 class="min-bride">Manahil Bint e Ansar</h1>
+
+        <p class="min-celebration">request the honor of your presence</p>
+        
+        <p class="min-date">9 August 2026</p>
+      </div>
+
+      <!-- Bottom decorative line -->
+      <div class="bottom-line"></div>
+
+      <!-- Scroll hint -->
+      <div class="min-scroll-hint">Scroll to continue</div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════ -->
+  <!-- INVITATION CARD (Main Content - hidden initially) -->
+  <!-- ══════════════════════════════════════════════════════ -->
+  <div id="invitationCard" class="invitation-card hidden">
+
+    <!-- Scrolling background petals -->
+    <div class="scroll-petals" id="scrollPetals"></div>
+
+    <!-- ── SECTION 1: BISMILLAH ── -->
+    <section class="section bismillah-section" id="bismillah">
+      <div class="islamic-geo-bg"></div>
+      <div class="section-content reveal">
+        <div class="bismillah-arabic">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</div>
+        <div class="gold-divider">
+          <span class="divider-line"></span>
+          <span class="divider-flower">✿</span>
+          <span class="divider-line"></span>
+        </div>
+        <blockquote class="quran-verse">
+          "And among His signs is that He created for you mates from among yourselves that you may find tranquility in
+          them, and He placed between you affection and mercy."
+        </blockquote>
+        <p class="surah-ref">— Surah Ar-Rum 30:21</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 2: NIKAH ANNOUNCEMENT ── -->
+    <section class="section names-section" id="names">
+      <div class="names-bg-glow"></div>
+      <div class="section-content reveal">
+        <p class="loving-couple-label">LOVING COUPLE NIKAH</p>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <h1 class="groom-name" id="groomName">SYED ZAHIR SHAH</h1>
+        <div class="heart-divider">
+          <span class="heart-ornament">♡</span>
+        </div>
+        <h1 class="bride-name" id="brideName">MANAHIL BINT E ANSAR</h1>
+        <p class="nikah-label">Are Getting Married</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 3: COUPLE PORTRAIT ── -->
+    <section class="section portrait-section" id="portrait">
+      <div class="section-content reveal">
+        <div class="portrait-frame-wrapper">
+          <div class="portrait-frame">
+            <!-- Gold corner ornaments -->
+            <div class="frame-corner frame-tl"></div>
+            <div class="frame-corner frame-tr"></div>
+            <div class="frame-corner frame-bl"></div>
+            <div class="frame-corner frame-br"></div>
+            <!-- Frame inner glow -->
+            <div class="frame-glow"></div>
+            <!-- The image -->
+            <img src="WhatsApp Image 2026-06-19 at 15.11.36.jpeg" alt="Syed Zahir Shah & Manahil Bint e Ansar"
+              class="couple-photo" id="couplePhoto" />
+          </div>
+          <!-- Floating particles around frame -->
+          <div class="frame-particles" id="frameParticles"></div>
+        </div>
+        <div class="portrait-flowers">
+          <span>✿</span><span>✿</span><span>✿</span><span>✿</span><span>✿</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 4: ISLAMIC BLESSINGS ── -->
+    <section class="section blessings-section" id="blessings">
+      <div class="section-content reveal">
+        <h2 class="section-heading">Islamic Blessings</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <div class="blessings-grid">
+          <div class="blessing-item reveal-stagger">❀ May Allah bless your union with endless love.</div>
+          <div class="blessing-item reveal-stagger">❀ May your home be filled with peace and barakah.</div>
+          <div class="blessing-item reveal-stagger">❀ May your hearts remain united forever.</div>
+          <div class="blessing-item reveal-stagger">❀ May Allah grant you happiness in both worlds.</div>
+        </div>
+        <div class="dua-arabic">رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ</div>
+        <p class="dua-translation">"Our Lord, grant us comfort through our spouses and children."</p>
+        <p class="surah-ref">— Surah Al-Furqan 25:74</p>
+      </div>
+    </section>
+
+    <!-- ── SECTION 5: INVITATION DETAILS ── -->
+    <section class="section details-section" id="details">
+      <div class="section-content reveal">
+        <div class="invitation-card-inner">
+          <!-- Card corner ornaments -->
+          <div class="card-corner card-tl"></div>
+          <div class="card-corner card-tr"></div>
+          <div class="card-corner card-bl"></div>
+          <div class="card-corner card-br"></div>
+
+          <p class="card-cordially">YOU ARE CORDIALLY INVITED</p>
+          <p class="card-to-celebrate">To Celebrate The Sacred Nikah Of</p>
+          <div class="gold-divider sm"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+              class="divider-line"></span></div>
+          <h2 class="card-groom">SYED ZAHIR SHAH</h2>
+          <p class="card-amp">&</p>
+          <h2 class="card-bride">MANAHIL BINT E ANSAR</h2>
+          <div class="gold-divider sm"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+              class="divider-line"></span></div>
+
+          <div class="details-grid">
+            <div class="detail-item">
+              <div class="detail-icon">📅</div>
+              <div class="detail-label">DATE</div>
+              <div class="detail-value">9th Aug 2026</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">🕖</div>
+              <div class="detail-label">TIME</div>
+              <div class="detail-value">7:00 PM</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">💍</div>
+              <div class="detail-label">EVENT</div>
+              <div class="detail-value">Nikah Ceremony &amp; Dinner Reception</div>
+            </div>
+            <div class="detail-item">
+              <div class="detail-icon">📍</div>
+              <div class="detail-label">VENUE</div>
+              <div class="detail-value">Rehman Marriage Hall<br>Kohat, Pakistan</div>
+            </div>
+            <div class="detail-item full-width">
+              <div class="detail-icon">👗</div>
+              <div class="detail-label">DRESS CODE</div>
+              <div class="detail-value">Elegant Traditional Attire</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 5.5: DINNER RECEPTION ── -->
+    <section class="section dining-section" id="dining">
+      <div class="section-content reveal">
+        <h2 class="section-heading">Dinner Reception</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <p class="dining-subtitle" style="color: var(--text-muted); margin-bottom: 30px;">Join us for a feast to
+          celebrate this joyous occasion</p>
+        <div class="portrait-frame-wrapper dining-frame-wrapper">
+          <div class="portrait-frame">
+            <!-- Gold corner ornaments -->
+            <div class="frame-corner frame-tl"></div>
+            <div class="frame-corner frame-tr"></div>
+            <div class="frame-corner frame-bl"></div>
+            <div class="frame-corner frame-br"></div>
+            <div class="frame-glow"></div>
+            <img src="dinning.jpg" alt="Dinner Reception" class="couple-photo dining-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 6: COUNTDOWN ── -->
+    <section class="section countdown-section" id="countdown">
+      <div class="section-content reveal">
+        <h2 class="section-heading">Counting Down To The Big Day</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <div class="countdown-grid">
+          <div class="countdown-box">
+            <div class="countdown-number" id="cd-days">00</div>
+            <div class="countdown-label">DAYS</div>
+          </div>
+          <div class="countdown-sep">✦</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cd-hours">00</div>
+            <div class="countdown-label">HOURS</div>
+          </div>
+          <div class="countdown-sep">✦</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cd-minutes">00</div>
+            <div class="countdown-label">MINUTES</div>
+          </div>
+          <div class="countdown-sep">✦</div>
+          <div class="countdown-box">
+            <div class="countdown-number" id="cd-seconds">00</div>
+            <div class="countdown-label">SECONDS</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 7: LOCATION ── -->
+    <section class="section location-section" id="location">
+      <div class="section-content reveal">
+        <h2 class="section-heading">📍 Venue Location</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <p class="venue-name">Rehman Marriage Hall, Kohat, Pakistan</p>
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26571.07264688!2d71.44!3d33.58!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38de2e1c8d11f989%3A0x1234567890abcdef!2sKohat%2C%20Pakistan!5e0!3m2!1sen!2s!4v1234567890"
+            width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade" title="Rehman Marriage Hall, Kohat">
+          </iframe>
+        </div>
+        <div class="map-buttons">
+          <a href="https://www.google.com/maps/dir/?api=1&destination=Rehman+Marriage+Hall+Kohat+Pakistan"
+            target="_blank" class="map-btn primary-btn">
+            🗺️ Get Directions
+          </a>
+          <a href="https://maps.google.com/?q=Rehman+Marriage+Hall+Kohat+Pakistan" target="_blank"
+            class="map-btn secondary-btn">
+            📍 Open Google Maps
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 8: SEND WISHES ── -->
+    <section class="section wishes-section" id="wishes">
+      <div class="section-content reveal">
+        <h2 class="section-heading">Leave Your Blessings</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <p class="wishes-subtitle">Share your heartfelt prayers for the couple</p>
+        <div class="wishes-form-card">
+          <form class="wishes-form" id="wishesForm">
+            <div class="form-field">
+              <label for="wishName">Your Name</label>
+              <input type="text" id="wishName" name="name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-field">
+              <label for="wishEmail">Email (optional)</label>
+              <input type="email" id="wishEmail" name="email" placeholder="your@email.com" />
+            </div>
+            <div class="form-field">
+              <label for="wishMessage">Your Blessing</label>
+              <textarea id="wishMessage" name="message" rows="4" placeholder="Write your heartfelt wishes..."
+                required></textarea>
+            </div>
+            <button type="submit" class="primary-btn wish-submit-btn" id="wishSubmitBtn">
+              <span>✨ Send Wishes</span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Floating wishes display -->
+        <div class="wishes-display" id="wishesDisplay"></div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 9: CONTACT ── -->
+    <section class="section contact-section" id="contact">
+      <div class="section-content reveal">
+        <h2 class="section-heading">Need Assistance?</h2>
+        <div class="gold-divider"><span class="divider-line"></span><span class="divider-flower">✿</span><span
+            class="divider-line"></span></div>
+        <div class="contact-cards">
+          <a href="tel:+923350917910" class="contact-card">
+            <div class="contact-icon">📞</div>
+            <div class="contact-label">CALL US</div>
+            <div class="contact-value">0335-0917910</div>
+          </a>
+          <a href="mailto:rabailsyed@gmail.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-label">EMAIL US</div>
+            <div class="contact-value">rabailsyed@gmail.com</div>
+          </a>
+          <a href="https://wa.me/923350917910?text=Assalamu%20Alaikum!%20I%20would%20like%20to%20extend%20my%20warm%20congratulations%20on%20the%20upcoming%20Nikah%20of%20Syed%20Zahir%20Shah%20and%20Manahil%20Bint%20e%20Ansar.%20May%20Allah%20bless%20this%20union."
+            target="_blank" class="contact-card whatsapp-card">
+            <div class="contact-icon">💬</div>
+            <div class="contact-label">WHATSAPP</div>
+            <div class="contact-value">Message Us On WhatsApp</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SECTION 10: GRAND FINALE ── -->
+    <section class="section finale-section" id="finale">
+      <div class="night-sky-bg"></div>
+      <div class="floating-lanterns" id="floatingLanterns"></div>
+      <div class="fireworks-canvas" id="fireworksCanvas"></div>
+      <div class="section-content reveal finale-content">
+        <div class="finale-grid">
+          <div class="finale-card finale-card-left">
+            <div class="finale-header">With The Blessings Of Allah</div>
+            <h2 class="finale-greeting">We Request The Honor Of Your Presence</h2>
+            <p class="finale-place">On Our Special Day, surrounded by family and prayer.</p>
+            <div class="finale-card-footer">
+              <span class="finale-date">9th Aug 2026</span>
+              <span class="finale-location">Kohat, Pakistan</span>
+            </div>
+          </div>
+          <div class="finale-card finale-card-right">
+            <div class="finale-names">
+              <h2 class="finale-groom">SYED ZAHIR SHAH</h2>
+              <p class="finale-amp">&</p>
+              <h2 class="finale-bride">MANAHIL BINT E ANSAR</h2>
+            </div>
+            <p class="finale-thanks">✨ Thank You For Being Part Of Our Journey ✨</p>
+            <div class="finale-description">Your presence will bring joy to our celebration and blessings to our new beginning.</div>
+            <div class="finale-fireworks-row" id="finaleFireworks">
+              <span>✦</span><span>✦</span><span>✦</span><span>✦</span><span>✦</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end #invitationCard -->
+
+  <!-- Audio element (silent fallback) -->
+  <audio id="bgMusic" loop>
+    <source src="song.aac" type="audio/aac" />
+    <source src="song.mpeg" type="audio/mpeg" />
+  </audio>
+
+  <!-- Music toggle button -->
+  <button class="music-btn hidden" id="musicBtn" title="Toggle Music">🎵</button>
+
+  <!-- Sparkle overlay for seal crack -->
+  <div class="sparkle-overlay" id="sparkleOverlay"></div>
+
+  <script src="script.js"></script>
+</body>
+
+
+</html>
